@@ -1,0 +1,47 @@
+.contact {
+	width: 100%;
+	min-height: 100px;
+	background-color: white;
+	border-top: 1px solid black;
+}
+
+.form {
+	position: relative;
+	margin: 5% auto;
+	width: 300px;
+	height: 350px;
+	background: url(http://gdurl.com/CNyM) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	border-radius: 5%;
+}
+
+h1 {
+	font-family: cursive;
+	color: black;
+}
+
+textarea {
+	position: relative;
+	margin: 15px 10%;
+}
+
+.form button:nth-child(9) { margin: 0 67%; }
+
+form textarea:nth-child(1),
+form textarea:nth-child(3),
+form textarea:nth-child(5) {
+	margin: 0 20%;
+	padding: 1px 0;
+	width: 200px;
+	height: 25px;
+}
+
+form textarea:nth-child(7) {
+	margin: 0 20%;
+	padding: 1px 0;
+	width: 200px;
+	height: 100px;
+}

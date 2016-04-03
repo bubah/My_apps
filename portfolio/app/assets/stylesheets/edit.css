@@ -1,0 +1,13 @@
+.edit {
+	position: relative;
+	margin: 0 0;
+	width: 100%;
+	height: 1100px;
+	background-color: white;
+}
+
+p:nth-child(4),
+p:nth-child(5) {
+	position: relative;
+	display: inline;
+}

@@ -1,0 +1,47 @@
+.tagline {
+	position: relative;
+	margin: 0 0;
+	width: 100%;
+	min-height: 600px;
+	background-color: green;
+  background: url(http://gdurl.com/CNyM) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	border-top: 1px solid black;
+}
+
+.tagline p {
+	position: relative;
+	margin: 4% auto;
+	width: 60%;
+	font-size: 30px;
+	font-family: cursive;
+	color: black;
+	text-shadow: 0 0;
+}
+
+.tagline a {
+	position: relative;
+	margin: 4% 43%;
+	font-size: 15px;
+}
+
+.tagline a:link,
+.tagline a:visited {
+	display: inline-block;
+	padding: 25px 35px;
+	font: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #009900;
+	border: 2px solid white;
+}
+
+.tagline a:hover,
+.tagline a:active {
+	color: #009900;
+	background-color: white;
+	border: 2px solid #009900;
+}

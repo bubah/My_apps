@@ -1,0 +1,13 @@
+<div class = "main">
+
+	<%= form_for @page do |f| %>
+	<div class = "edit">
+		<h3>Cover:<br><%= f.file_field :cover, class: 'form-control'%><br></h3>
+    <h3>Title:<%= f.text_area :title, class: 'form-control' %><br></h3>
+    <h3>description:<%= f.text_area :description, class: 'form-control' %></h3>
+		<p><%= link_to 'back', '/pages', class: "btn btn-primary" %>
+		<p><%= f.submit "Update", class: 'btn btn-primary' %></p>
+	</div>
+	<%end%>
+
+</div>

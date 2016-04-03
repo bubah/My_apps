@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dco7eugiv
+  api_key: '589893769171577'
+  api_secret: uRL0OIB0TQfk_u9bL3w-xxmGGEA
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dco7eugiv
+  api_key: '589893769171577'
+  api_secret: uRL0OIB0TQfk_u9bL3w-xxmGGEA
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dco7eugiv
+  api_key: '589893769171577'
+  api_secret: uRL0OIB0TQfk_u9bL3w-xxmGGEA
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,0 +1,32 @@
+.aboutme {
+	position: relative;
+	margin: 0 0;
+	width: 100%;
+	min-height: 800px;
+	background-color: green;
+	background: url(http://gdurl.com/CNyM) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: 1px solid black;
+}
+
+.photo {
+	position: absolute;
+	margin: 3% 12%;
+	float: right;
+	border: 1px solid green;
+}
+
+.mypic {
+	position: absolute;
+	margin: 3% 40%;
+	width: 50%;
+}
+
+.mypic p {
+	margin-top: 0;
+	font-family: cursive;
+	font-size: 20px;
+}
