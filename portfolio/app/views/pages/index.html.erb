@@ -4,7 +4,7 @@
 
 	<% @pages.each do |proj| %>
 	<div class="project">
-    <%= cl_image_tag("#{proj.title}.jpg", :width=>375, :height=>700, :crop=>:fit) %>
+    <img src="<%= proj.cover %>">
     <h3><%= proj.title %></h3>
     <p><%= proj.description %></p>
 

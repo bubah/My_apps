@@ -26,7 +26,6 @@ class PagesController < ApplicationController
 	def create
 		@page = Page.new(page_params)
 		if @page.save
-			Cloudinary::Uploader.upload(page_params[:cover], :public_id => "#{@page.title}")
 			redirect_to '/pages', notice: "The project #{@page.title} has been uploaded to your profile"
 		else
 			render 'new'
