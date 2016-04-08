@@ -1,0 +1,248 @@
+/* Setup properties for body of webpage */
+
+/* For mobile devices */
+* {box-sizing: border-box;}
+
+html body {
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+    /*padding: 15px;*/
+    border: 1px solid red;
+}
+
+.top_bar {
+	position: relative;
+	margin: 0 0;
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-color: green;
+	opacity: 1;
+}
+
+.top_bar .logo {
+	text-align: center;
+	font-size: 30px;
+
+}
+.dropdown {
+	margin: 40px auto;
+	text-align: center;
+	font-size: 30px;
+
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: orange;
+	min-width: 160px;
+	padding: 12px 2px;
+	margin: 0 30%;
+	list-style-type: none;
+	z-index: 1;
+	font-size: 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+
+img {
+	position: relative;
+	width: 70%;
+	margin: 0 15%;
+}
+
+.info {
+	background-color: gray;
+}
+.info h2, .info p {
+	color: black;
+}
+
+.footer {
+	background-color: green;
+}
+
+/* For Desktop */
+
+@media screen and (min-width: 600px) {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+html body {
+	margin: 0 0;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	background-image: url("http://i.imgur.com/IuflNQM.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Navigation Bar section*/
+/* Setup properties for navigation bar */
+.top_bar {
+	position: relative;
+	margin: 2% 0;
+	/*width: 100%;*/
+	height: auto;
+	background-color: black;
+	opacity: .7;
+}
+/* Setup properties for logo in nav. bar */
+.top_bar .logo {
+	position: relative;
+	color: white;
+	display: inline-block;
+	margin: 30px 10px;
+	border: 2px solid white;
+	border-radius: 40%;
+}
+/* Setup properties for logo in nav. bar */
+.top_bar .dropdown {
+	margin: 0 0;
+	display: inline-block;
+}
+/.dropdown .dropdown-content  {
+	position: relative;
+	margin:  -20px -30%;
+	display: inline-block;
+	width: 75px;
+	background-color: transparent;
+	background-image: none;
+}
+
+.dropdown-content li {
+	position: relative;
+	display: inline-block;
+	float: left;
+
+}
+/* Setup properties for initial's 'BC' in logo */
+#top_bar h1 {
+	position: absolute;
+	margin-top: 2px;
+	margin-left: 15px;
+	color: white;
+}
+/* Setup properties for list in nav. bar */
+#top_bar li {
+	position: relative;
+	margin-top: 1.5em;
+	margin-left: 15px;
+	display: inline-block;
+	font-size: 13.5px;
+	color: white;
+	border-right: 1px white solid;
+	padding-right: 10px;
+}
+/* Sets lists in nav bar as hyper links and sets properties */
+#top_bar a {
+	display: block;
+	width: 70px;
+}
+/* Sets 'ABOUT ME' link in nav bar to gold */
+
+/* Info block section */
+/* Setup properties for info block */
+.dash {
+	position: relative;
+	background-color: black;
+	margin: 0 auto;
+	width: 70%;
+	height: 600px;
+	background: rgba(0,0,0,.9);
+}
+
+.prof {
+	margin: 10% 0 0 0;
+}
+
+.dash img {
+	border-radius: 100%;
+}
+.info {
+	background-color: transparent;
+	margin: 10% 0 0 0;
+}
+
+/* Setup properties for headers in info block */
+.info h2 {
+	position: relative;
+	margin-top: 25px;
+	margin-left: 10%;
+	display: block;
+	color: white;
+
+}
+/* Setup properties for paragraph in info block */
+.info p {
+
+	position: relative;
+	margin-top: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: block;
+	float: right;
+	font-size: 20px;
+	color: white;
+}
+/* Setup properties for list in info block */
+.info ul {
+	position: relative;
+	margin-top: 0;
+	margin-left: 10%;
+	display: block;
+	font-size: 20px;
+	color: white;
+}
+/* Setup properties for image in info block */
+
+/* Setup properties for links used in nav bar */
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited { color: white; }
+
+a:hover { color: #daa520; }
+
+a:active { color: #daa520; }
+}
+
+.footer {
+	margin: 5% 0 0 0;
+}
