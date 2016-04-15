@@ -13,60 +13,211 @@
  *= require_tree .
  *= require_self
  */
-html {
+
+/* For mobile Device */
+
+html, body {
 	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: #009900;
 }
-
-body {
-	width: 100%;
-	height: auto;
-	background-color: #009900;
-}
-
 .header {
 	position: relative;
 	margin: 0 0;
 	width: 100%;
-	min-height: 300px;
+	height: auto;
 	background-color: #009900;
 	border-top: 1px solid green;
 	float: left;
 }
+.header img {
+	float: left;
+	display: inline-block;
+	height: 80px;
+}
+.header .logo {
+	display: none;
+}
+.logo h1 {
+	margin: 30px 10px;
+	font: cursive;
+}
+
+.dropbtn {
+	background-color: white;
+	float: right;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.bar {
+	width: 30px;
+	height: 5px;
+	background-color: green;
+	margin: 5px;
+}
+.dropdown {
+	position: relative;
+	clear:left;
+	display: block;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	background-color: #66ccff;
+	width: 100%;
+	height:200px;
+	clear: both;
+	text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+.dropdown-content a {
+	display: block;
+	padding: 2px 60px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #009900;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #ff9999;
+}
+
+.acount {
+	list-style-type: none;
+	float: left;
+	margin-left: -30px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.log {
+	float: right;
+	padding: 5px;
+	list-style-type: none;
+	border-radius: 5px;
+	background-color: #339966;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.header a:link,
+.header a:visited {
+	color: white;
+}
+
+.header a:hover,
+.header a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.footer {
+	position: relative;
+	background-color: #009900;
+	width: 100%;
+	float: left;
+}
+
+.footer p { color: white; }
+
+.footer ul { list-style-type: none; }
+
+.footer img {
+	position: relative;
+	margin-top: 15px;
+	margin-left: 30%;
+	display: inline;
+	width: 75px;
+	border: 100%;
+}
+
+/* For Desktop */
+@media screen and (min-width: 600px) {
+
+
+.header {
+	height: 300px;
+}
 
 .header img {
 	float: right;
+	height: auto;
 }
 
 .header .logo {
 	position: absolute;
-	margin: 180px 20px;
-	display: inline;
+	margin-top: 170px;
+	margin-left: 10px;
+	display: inline-block;
+	width: 72px;
+	height: 110px;
 	border: 4px solid white;
 }
 
 .logo h1 {
-	margin: 30px 10px;
+	position: absolute;
+	margin: 27px 7px;
 	font: italic;
 }
 
-.nav ul {
-	position: absolute;
-	margin: 250px 110px;
-	display: inline;
-	list-style: none;
+
+.dropbtn {
+	display: none;
 }
 
-.nav li {
-	display: inline;
-	padding: 15px;
+.dropdown-content {
+	display: block;
+	background-color: transparent;
+	width: auto;
+	position: absolute;
+	margin-top: 230px;
+	margin-left: 130px;
+}
+
+
+
+.dropdown-content a {
+	display: inline-block;
+	background-color: transparent;
+	padding-right: 15px;
+	padding-left: 10px;
 	font-size: 20px;
 	border-right: 1px  white solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
+.dropdown-content a:hover {
+	background-color: transparent;
+}
 
+.acount {
+	position: absolute;
+	margin-top: 120px;
+	float: right;
+	margin-left: 1100px;
+}
+
+.log {
+	margin-bottom: 20px;
+	margin-top: 120px;
+	position: absolute;
+	margin-left: 1225px;
+}
 .header h1:nth-child(3) {
 	position: relative;
 	margin-top: 50px;
@@ -77,7 +228,38 @@ body {
 	margin-right: 100px;
 }
 
-h5 {
+.header a:link,
+.header a:visited {
+	color: white;
+}
+
+.header a:hover,
+.header a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.footer {
+	position: relative;
+	background-color: #009900;
+	width: 100%;
+	float: left;
+}
+
+.footer p { color: white; }
+
+.footer ul { list-style-type: none; }
+
+.footer img {
+	position: relative;
+	margin: 2px;
+	display: inline;
+	width: 25px;
+	height: 25px;
+	border: 100%;
+}
+
+/*h5 {
 	margin-top: 120px;
 	margin-right: 5px;
 	float: right;
@@ -114,4 +296,5 @@ h5 ul { list-style-type: none; }
 	width: 25px;
 	height: 25px;
 	border: 100%;
+}*/
 }

@@ -2,6 +2,7 @@
 <html lang="en-us">
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,500,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -18,24 +19,29 @@
     	<h1><%= link_to 'BC', '/' %></h1>
   	</div>
 
-  	<div class="nav">
-    	<ul>
-      	<li><%= link_to 'Welcome', '/' %></li>
-      	<li><%= link_to 'About Me', '/about' %></li>
-      	<li><%= link_to 'Portfolio', '/pages' %></li>
-      	<li><%= link_to 'Contact', '/contact' %></li>
-    	</ul>
+  	<div class="nav dropdown">
+      <button class="dropbtn nobtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="dropdown-content">
+      	<%= link_to 'Welcome', '/' %>
+      	<%= link_to 'About Me', '/about' %>
+      	<%= link_to 'Portfolio', '/pages' %>
+      	<%= link_to 'Contact', '/contact' %>
+      </div>
     </div>
 
     <h5><% if current_user %>
       <ul>
-        <li><%= "#{current_user.first_name}'s account" %></li><li><%= link_to "Log out", logout_path, method: "delete" %></li>
+        <li class="acount"><%= "#{current_user.first_name}'s account" %></li><li class="log"><%= link_to "Log out", logout_path, method: "delete" %></li>
       </ul>
       <% else %>
 
       <ul>
-        <li><%= link_to "Login", 'login' %></a></li>
-        <li><%= link_to "Signup", 'signup' %></a></li>
+        <li class="log"><%= link_to "Login", 'login' %></a></li>
+        <li class="acount"><%= link_to "Signup", 'signup' %></a></li>
       </ul>
     <% end %></h5>
 	</div>

@@ -1,56 +1,162 @@
-.main {
-	position: relative;
-	float: left;
-	margin: 0 0;
-	width: 100%;
-	min-height: 1000px;
-	border-top: 1px solid black;
+/* For mobile device */
+* {box-sizing: border-box;}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+
 }
 
-.portfolio {
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+.bub {
 	position: relative;
-	margin: 0 0;
+	float: left;
 	width: 100%;
-	min-height: 1000px;
+	min-height: 300px;
 	background-color: white;
 	border-top: 1px solid black;
 }
 
+.row {
+	width: 100%;
+	margin: 0 0;
+}
+
 .project {
-	margin: 15px 1.5%;
-	float: left;
 	width: auto;
 	height: auto;
+	border-bottom: 5px dotted green;
 }
 
 .project img {
-	width: 375px;
+	width: 85%;
+	margin: 5% 7.5%;
 	border: 2px solid black;
 }
+.project h3 {
+	margin-left: 7.5%;
+}
 
-.project p { width: 400px; }
+.project p {
+	margin: 0 7.5%;
+	margin-bottom: 15px;
+}
 
-.project p:nth-child(4) {
+.project h5 {
 	position: relative;
-	margin: 0 0;
+	margin-top: 2%;
+	margin-left: 7.5%;
+	float: left;
 	display: inline-block;
 }
 
-button {
+.project button {
 	position: relative;
-	margin: -77px 70px;
+	float: left;
+	margin-top: 2%;
+	margin-left: 0;
 	display: inline-block;
 }
 
 .add_new {
 	position: relative;
-	margin: 10px 40%;
-	display: block;
-	clear: both;
+	margin: 0 0;
+
+}
+
+.add_new .btn {
+	position: relative;
+	margin-top: 5px;
+	margin-left: 25%;
+	margin-bottom: 5px;
 }
 
 a:link,
 a:visited {
 	color: white;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    border-bottom: none;
+}
+
+.bub {
+
+	margin: 0 0;
+	min-height: 1000px;
+}
+.row {
+	width: 100%;
+	margin: 0 0;
+	float: left;
+}
+
+.project {
+	float: left;
+}
+
+.project img {
+	width: 400px;
+	margin: 15px 20px;
+	border: 2px solid black;
+}
+.project h3 {
+	margin-left: 20px;
+}
+
+.project p {
+	margin-left: 20px;
+	margin-right: 0;
+	width: 400px;
+
+}
+
+.project h5 {
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+.project button {
+	margin-top: 10px;
+	margin-left: 2px;
+}
+
+.add_new {
+	display: inline-block;
+	clear: both;
+	float: left;
+}
+
+.add_new .btn {
+	margin-top: 0;
+	margin-left: 43%;
+
+}
+
+a:link,
+a:visited {
+	color: white;
+	text-decoration: none;
+}
 }
